@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 1fr;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: #1992D4;
+    color: white;
+    font-size: 2.5vh;
+    gap: 2vh;
+    user-select: none;
+    z-index: 2;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+aside h2 {
+    position: relative;
+    left: 3vw;
+    display: flex;
+    align-items: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+#communities {
+    margin-bottom: 15vh;
+}
+
+aside button {
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 6vh;
+    padding-left: inherit;
+    background: none;
+    border: none;
+    font-size: inherit;
+}
+
+button h3 {
+    display: flex;
+    align-items: center;
+}
+
+button:hover{
+    border-left: .3vw solid white;
+    background-color: rgba(255, 255, 255, 0.109);
+    cursor: pointer;
+}
+
+main {
+    background-color: #E2E8F0;
+}
+
+header {
+    padding: .5rem;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgb(192, 192, 192);
+}
+
+#up-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#search-div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+#search-div input {
+    border: none;
+    background-color: #E2E8F0;
+    border-radius: 5vw;
+    height: 1.7rem;
+    width: 40rem;
+}
+
+#profile-div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
+#down-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: .5rem;
+}
+
+#user-div {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#buttons-div {
+    margin-right: 2rem;
+}
+
+#buttons-div button{
+    border: none;
+    background-color: #1992D4;
+    color: white;
+    font-size: 1rem;
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 5vw;
+    margin-left: 1rem;
+}
+
+#buttons-div button:hover {
+    opacity: 85%;
+}
+
+#buttons-div button:active {
+    opacity: 60%;
+}
+
+#container {
+    display: flex;
+    padding: 1.5rem 1rem;
+    gap: 2rem;
+}
+
+#projects {
+    flex: 3;
+}
+
+#project-grid {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); 
+    gap: 1rem;
+}
+
+#project-grid-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-left: .5rem solid #F0B429;
+    border-radius: .5vw;
+}
+
+#project-grid-items div p {
+    color: #636363;
+    font-size: .9rem;
+}
+
+#project-grid-items h4 {
+    margin-bottom: 1rem;
+}
+
+#icons {
+    align-self: flex-end;
+}
+
+#trending-topics {
+    flex: 1;
+}
+
+#announcements-div {
+    margin-top: 1rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: .5vw;
+}
+
+#announcements-div div h5 {
+    margin-bottom: .3rem;
+}
+
+#announcements-div div p {
+    color: #636363;
+    font-size: .8rem;
+}
+
+hr {
+    color: #636363;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+#trending {
+    margin-top: 1rem;
+}
+
+#trending-div {
+    margin-top: 1rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: .5vw;
+}
+
+#trending-element {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: .7rem;
+    gap: 1rem;
+}
+
+#user-name {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+#user-project {
+    color: #636363;
+    font-size: .8rem;
+}
+
+#profile-div .circular, #trending-element .circular { 
+    display: inline-block; 
+    position: relative; 
+    width: 3rem; 
+    height: 3rem; 
+    overflow: hidden; 
+    border-radius: 50%; 
+} 
+
+#profile-div .circular img, #trending-element .circular img { 
+    width: auto; 
+    height: 100%; 
+    margin-left: -5px; 
+}
+
+#user-div .circular {
+    display: inline-block; 
+    position: relative; 
+    width: 5rem; 
+    height: 5rem; 
+    overflow: hidden; 
+    border-radius: 50%; 
+}
+
+#user-div .circular img { 
+    width: auto; 
+    height: 100%; 
+    margin-left: -10px; 
+}
+
+@media (max-width: 600px){
+    body {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 60% 1fr;
+    }
+}

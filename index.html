@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside>
+        <h2><span style="font-size: inherit;" class="material-symbols-outlined">dashboard</span>&nbsp;Dashboard</h2>
+
+        <button>
+            <h3><span style="font-size: inherit;" class="material-symbols-outlined">&nbsp;&nbsp;&nbsp;home</span>&nbsp;Home</h3>
+        </button>
+
+        <button>
+            <h3><span style="font-size: inherit;" class="material-symbols-outlined">&nbsp;&nbsp;&nbsp;account_circle</span>&nbsp;Profile</h3>
+        </button>
+
+        <button>
+            <h3><span style="font-size: inherit;" class="material-symbols-outlined">&nbsp;&nbsp;&nbsp;chat</span>&nbsp;Messages</h3>
+        </button>
+
+        <button>
+            <h3><span style="font-size: inherit;" class="material-symbols-outlined">&nbsp;&nbsp;&nbsp;history</span>&nbsp;History</h3>
+        </button>
+
+        <button>
+            <h3><span style="font-size: inherit;" class="material-symbols-outlined">&nbsp;&nbsp;&nbsp;task</span>&nbsp;Tasks</h3>
+        </button>
+
+        <button id="communities">
+            <h3><span style="font-size: inherit;" class="material-symbols-outlined">&nbsp;&nbsp;&nbsp;groups</span>&nbsp;Communities</h3>
+        </button>
+
+        <button>
+            <h3><span style="font-size: inherit;" class="material-symbols-outlined">&nbsp;&nbsp;&nbsp;settings</span>&nbsp;Settings</h3>
+        </button>
+
+        <button>
+            <h3><span style="font-size: inherit;" class="material-symbols-outlined">&nbsp;&nbsp;&nbsp;help</span>&nbsp;Support</h3>
+        </button>
+        
+        <button>
+            <h3><span style="font-size: inherit;" class="material-symbols-outlined">&nbsp;&nbsp;&nbsp;verified_user</span>&nbsp;Privacy</h3>
+        </button>    
+    </aside>
+    <main>
+        <header>
+            <div id="up-header">
+                <div id="search-div">
+                    <label for="search"><span class="material-symbols-outlined">search</span></label>
+                    <input id="search" type="text">
+                </div>
+                <div id="profile-div">
+                    <span class="material-symbols-outlined">
+                        notifications_active
+                    </span>
+                    <div class="circular">
+                        <img src="./images/profile.jpg" alt="Profile picture">
+                    </div>
+                    <h3>Marco Vinícius</h3>
+                </div>  
+            </div>
+            <div id="down-header">
+                <div id="user-div">
+                    <div class="circular">
+                        <img src="./images/profile.jpg" alt="Profile picture">
+                    </div>
+                    <div id="user-greetings">
+                        <p>Hi there,</p>
+                        <h2>Marco Vinícius (@vmarcoo)</h2>
+                    </div>
+                </div>
+                <div id="buttons-div">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </header>
+        <div id="container">
+            <div id="projects">
+                <h3>Your Projects</h3>
+                <div id="project-grid">
+                    <div id="project-grid-items">
+                        <div>
+                            <h4>Super Cool Project</h4>
+                            <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilis felis accumsan nec.</p>
+                        </div>
+                        <div id="icons">
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">visibility</span>
+                            <span class="material-symbols-outlined">share</span>
+                        </div>
+                    </div>
+                    <div id="project-grid-items">
+                        <div>
+                            <h4>Less Cool Project</h4>
+                            <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                        </div>
+                        <div id="icons">
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">visibility</span>
+                            <span class="material-symbols-outlined">share</span>
+                        </div>
+                    </div>
+                    <div id="project-grid-items">
+                        <div>
+                            <h4>Impossible App</h4>
+                            <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                        </div>
+                        <div id="icons">
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">visibility</span>
+                            <span class="material-symbols-outlined">share</span>
+                        </div>
+                    </div>
+                    <div id="project-grid-items">
+                        <div>
+                            <h4>Easy Peasy App</h4>
+                            <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                        </div>
+                        <div id="icons">
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">visibility</span>
+                            <span class="material-symbols-outlined">share</span>
+                        </div>
+                    </div>
+                    <div id="project-grid-items">
+                        <div>
+                            <h4>Ad Blocker</h4>
+                            <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                        </div>
+                        <div id="icons">
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">visibility</span>
+                            <span class="material-symbols-outlined">share</span>
+                        </div>
+                    </div>
+                    <div id="project-grid-items">
+                        <div>
+                            <h4>Money Maker</h4>
+                            <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+                        </div>
+                        <div id="icons">
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">visibility</span>
+                            <span class="material-symbols-outlined">share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="trending-topics">
+
+                <div id="announcements">
+                    <h3>Announcements</h3>
+                    <div id="announcements-div">
+                        <div>
+                            <h5>Site Maintenance</h5>
+                            <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <h5>Community Share Day</h5>
+                            <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <h5>Updated Privacy Policy</h5>
+                            <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="trending">
+                    <h3>Trending</h3>
+                    <div id="trending-div">
+                        <div id="trending-element">
+                            <div class="circular"><img src="./images/sheldon.jpg" alt="Sheldon"></div>
+                            <div id="trending-person">
+                                <p id="user-name">@sheldon</p>
+                                <p id="user-project">Nobel Prize Generator</p>
+                            </div>
+                        </div>
+
+                        <div id="trending-element">
+                            <div class="circular"><img src="./images/profile.jpg" alt="Sheldon"></div>
+                            <div id="trending-person">
+                                <p id="user-name">@vmarcoo</p>
+                                <p id="user-project">Super Cool Project</p>
+                            </div>
+                        </div>
+
+                        <div id="trending-element">
+                            <div class="circular"><img src="./images/jinora.jpg" alt="Sheldon"></div>
+                            <div id="trending-person">
+                                <p id="user-name">@jinora</p>
+                                <p id="user-project">Airbending System</p>
+                            </div>
+                        </div>
+
+                        <div id="trending-element">
+                            <div class="circular"><img src="./images/mrrobot.jpg" alt="Sheldon"></div>
+                            <div id="trending-person">
+                                <p id="user-name">@fsociety</p>
+                                <p id="user-project">w4nn4cry.exe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
